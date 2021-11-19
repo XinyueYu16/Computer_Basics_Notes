@@ -1,6 +1,6 @@
 # 环境控制、版本控制、GIT
 
-
+</br>
 
 ### 环境控制三重境界
 
@@ -11,7 +11,7 @@ pyenv跑 —— 改变python及包环境，相信软件依赖
 docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有linux内核但是当文件都在windows上的时候存取会变慢……所以除了使用docker时，我都是用wsl
 
 
-
+</br>
 
 
 ### 实际操作
@@ -34,7 +34,7 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
 ——版本控制保心护肝造福全家人人有责——
 
 
-
+</br>
 
 
 ### git控制
