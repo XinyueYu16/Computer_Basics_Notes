@@ -11,3 +11,5 @@ Python基础知识
 2. 闭包/装饰器：[decorator](./Python_Basics/decorator.md)
 3. 版本控制: [version_control](./Python_Basics/version_control.md)
 
+4. 测试: [test](./Python_Basics/test.md)
+
