@@ -40,16 +40,42 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
 ### git控制
 
 1. 创建git: git init
+
 2. 设置需要被track的文件：git add 
     - 只是记录需要被track，当他们发生改变的时候git status会提醒，但是不会保存快照；
     - 每一次文件被修改后都要add；
     - 不希望被track的文件可以放入.gitignore
-3. 保存文件快照：git commit -m
+
+3. 暂存内容：[git squash](https://www.cnblogs.com/tocy/p/git-stash-reference.html)
+
+    - 当你在当前分支的内容没有commit（不想让过多未完成commit污染log）没法checkout其他分支
+    - git squash list: 查看所有被暂存的名称
+    - git squash pop: 从list中去除最新暂存的一个，并且释放到当前空间
+    - git squash apply: 根据指定名字释放到当前空间，默认第一个，不从list中删除
+
+4. 保存文件快照：git commit -m
     - 当前快照被保存至本地仓库
+
 5. 查看历史版本：git log --pretty=oneline 
     - 可以取前6位数进行checkout
+
 6. 回到快照节点：git checkout
     - 当前状态为HEAD
     - 当checkout到未被命名的分支以后，处于分离状态，detached HEAD
+
 7. 强制回到状态：git reset --hard \[6位数\]
     - 确保回到你想要修改的分支上，再做这个操作
+
+8. 多commit合并: git squash
+
+    
+
+    
+
+**实例操作：**
+
+- *开发petal过程中需要rebase新的master*：git stash save ->  git checkout -> git fetch -> git pull -> git checkout -> HEAD git rebase -> git stash apply-> git add -> git commit -> git push (git squash)
+
+
+
+
