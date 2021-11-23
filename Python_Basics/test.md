@@ -12,7 +12,17 @@
 **pytest版本**
 
 - 会运行一切test_开头的脚本，包括class与test
+
 - 一个TestClassName的class或test_function里的test需要全部通过
+
+- catch Excpetion:
+
+  ```python
+  with pytest.raises(ValueError, match='操作方式可能不符合要求'):
+  	#codes that will cause this ValueError
+  ```
+
+    
 
 **unittest版本**
 
