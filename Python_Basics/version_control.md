@@ -30,6 +30,7 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
   - **用命令行跑脚本**，避免忽视Error
   - 写Jupyter Notebook时不要上下移动cell block，**不要有选择性地跑cell**
   - **commit前记得保存当前编辑过的脚本**
+  - 在切换branch后记得清除环境变量(global environment)
 
 ——版本控制保心护肝造福全家人人有责——
 
@@ -75,7 +76,6 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
 **实例操作：**
 
 - *开发petal过程中需要rebase新的master*：git stash save ->  git checkout -> git fetch -> git pull -> git checkout -> HEAD git rebase -> git stash apply-> git add -> git commit -> git push (git squash)
-
 
 
 
