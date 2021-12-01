@@ -41,13 +41,15 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
 ### git控制
 
 1. 创建git: git init
-
-2. 设置需要被track的文件：git add 
+2. 当从远程下载内容时: 
+    - fetch: 只取不合, harmless
+    - pull：取+合，建议只在空白branch上进行该操作
+4. 任何开发都先branch到development_branch，不要再main/master上进行add或commit
+5. 设置需要被track的文件：git add 
     - 只是记录需要被track，当他们发生改变的时候git status会提醒，但是不会保存快照；
     - 每一次文件被修改后都要add；
     - 不希望被track的文件可以放入.gitignore
-
-3. 暂存内容：[git stash](https://www.cnblogs.com/tocy/p/git-stash-reference.html)
+6. 暂存内容：[git stash](https://www.cnblogs.com/tocy/p/git-stash-reference.html)
 
     - 当你在当前分支的内容没有commit（不想让过多未完成commit污染log）没法checkout其他分支
     - git squash list: 查看所有被暂存的名称
@@ -56,22 +58,24 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
     - git stash drop stash@{0}: 删除指定的stash，但是注意每删除一次序号都会变……如果想要从上往下删，不停git stash drop stash@{0}就可以
     - git stash 会在远程仓库被共享吗?
 
-4. 保存文件快照：git commit -m
+6. 保存文件快照：git commit -m
     - 当前快照被保存至本地仓库
 
-5. 查看历史版本：git log --pretty=oneline 
+7. 查看历史版本：git log --pretty=oneline 
     - 可以取前6位数进行checkout
 
-6. 回到快照节点：git checkout
+8. 回到快照节点：git checkout
     - 当前状态为HEAD
     - 当checkout到未被命名的分支以后，处于分离状态，detached HEAD
 
-7. 强制回到状态：git reset --hard \[6位数\]
+9. 强制回到状态：git reset --hard \[6位数\]
     - 确保回到你想要修改的分支上，再做这个操作
 
-8. 多commit合并: git squash
+10. 多commit合并: git squash
+11. 上传: git push
+    - 第一次push的时候需要 git push --set-upstream origin branchname
+    - 当远程的内容与本地内容不一致，且本地内容不是基于远程内容枝上分叉出来的时候，如果想采取本地更改，git push -f (不要试图 -f master或main)
 
-    
 
     
 
