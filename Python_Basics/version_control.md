@@ -77,6 +77,10 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
     - 第一次push的时候需要 git push --set-upstream origin branchname
     - 当远程的内容与本地内容不一致，且本地内容不是基于远程内容枝上分叉出来的时候，如果想采取本地更改，git push -f (不要试图 -f master或main)
 
+### 其他git知识
+- .gitkeep：
+  - git无法追踪空文件夹，所以在空文件夹下放.gitkeep以便追踪
+  - .gitkeep常被用来使git忽略一个文件夹下的所有文件，并保留该文件夹（这种用法需要在.gitignore中加入 `!.gitkeep` ）
 
     
 
