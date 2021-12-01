@@ -44,12 +44,13 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
 2. 当从远程下载内容时: 
     - fetch: 只取不合, harmless
     - pull：取+合，建议只在空白branch上进行该操作
-4. 任何开发都先branch到development_branch，不要再main/master上进行add或commit
-5. 设置需要被track的文件：git add 
+3. 开发时：
+    - 任何开发都先branch到development_branch，不要在main/master上进行add或commit
+4. 设置需要被track的文件：git add 
     - 只是记录需要被track，当他们发生改变的时候git status会提醒，但是不会保存快照；
     - 每一次文件被修改后都要add；
     - 不希望被track的文件可以放入.gitignore
-6. 暂存内容：[git stash](https://www.cnblogs.com/tocy/p/git-stash-reference.html)
+5. 暂存内容：[git stash](https://www.cnblogs.com/tocy/p/git-stash-reference.html)
 
     - 当你在当前分支的内容没有commit（不想让过多未完成commit污染log）没法checkout其他分支
     - git squash list: 查看所有被暂存的名称
