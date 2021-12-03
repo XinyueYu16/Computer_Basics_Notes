@@ -1,6 +1,6 @@
 # 基础版本
 
-[Datamap教程](https://www.datacamp.com/community/tutorials/decorators-python?utm_source=adwords_ppc&utm_medium=cpc&utm_campaignid=14989519638&utm_adgroupid=127836677279&utm_device=c&utm_keyword=&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=332602034364&utm_targetid=aud-392016246653:dsa-429603003980&utm_loc_interest_ms=&utm_loc_physical_ms=9040307&gclid=EAIaIQobChMI2LzVjbWS9AIV-JNmAh0huAGfEAAYASAAEgIfRvD_BwE)
+[Datacamp教程](https://www.datacamp.com/community/tutorials/decorators-python?utm_source=adwords_ppc&utm_medium=cpc&utm_campaignid=14989519638&utm_adgroupid=127836677279&utm_device=c&utm_keyword=&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=332602034364&utm_targetid=aud-392016246653:dsa-429603003980&utm_loc_interest_ms=&utm_loc_physical_ms=9040307&gclid=EAIaIQobChMI2LzVjbWS9AIV-JNmAh0huAGfEAAYASAAEgIfRvD_BwE)
 
 ```python
 def decorator_maker_with_arguments(decarg1, decarg2):
