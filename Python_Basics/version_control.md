@@ -73,7 +73,14 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
     - 确保回到你想要修改的分支上，再做这个操作
 
 10. 多commit合并: git squash
-11. 上传: git push
+    - git rebase -i HEAD~3 
+      - Linux里面莫名奇妙地不能这么做，但是Terminal/wsl可以
+      - HEAD后面的~数量尽量要比需要squash的大，然后就可以看到尽可能多的commit
+      - 在需要squash的行里 commit转成s
+
+11. bump2version: bump2version major|minor|patch
+
+12. 上传: git push
     - 第一次push的时候需要 git push --set-upstream origin branchname
     - 当远程的内容与本地内容不一致，且本地内容不是基于远程内容枝上分叉出来的时候，如果想采取本地更改，git push -f (不要试图 -f master或main)
 
