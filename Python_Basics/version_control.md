@@ -6,7 +6,7 @@
 
 本地裸跑 —— 相信运气
 
-pyenv跑 —— 改变python及包环境，相信软件依赖
+pyenv+virtualencv跑 —— 改变python及包环境，相信软件依赖(pyenv修改python环境，virtualenv控制项目包环境)
 
 docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有linux内核但是当文件都在windows上的时候存取会变慢……所以除了使用docker时，我都是用wsl
 
@@ -45,7 +45,8 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
     - fetch: 只取不合, harmless
     - pull：取+合，建议只在空白branch上进行该操作
 3. 开发时：
-    - 任何开发都先branch到development_branch，不要在main/master上进行add或commit
+    - 任何开发都先branch到development_branch，**不要在main/master上进行add或commit**
+    - 或者 git checkout -b new_branch_name，一键生成并切换到新branch
 4. 设置需要被track的文件：git add 
     - 只是记录需要被track，当他们发生改变的时候git status会提醒，但是不会保存快照；
     - 每一次文件被修改后都要add；
@@ -65,7 +66,7 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
 7. 查看历史版本：git log --pretty=oneline 
     - 可以取前6位数进行checkout
 
-8. 回到快照节点：git checkout
+8. **回到快照节点：git checkout**
     - 当前状态为HEAD
     - 当checkout到未被命名的分支以后，处于分离状态，detached HEAD
 
