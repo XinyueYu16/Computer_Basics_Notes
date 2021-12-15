@@ -13,7 +13,7 @@
     4. bcdedit /set hypervisorlaunchtype auto，重启 [参考](https://www.jianshu.com/p/12040389e0e2)
 
 
-- 为什么wsl2?
+- [为什么wsl2?]https://docs.microsoft.com/en-us/windows/wsl/compare-versions
   - wsl1：假Linux内核，文件都存在windows上，如果符合这种文件存储习惯，wsl1更快
   - wsl2：真Linux内核，可跑Docker，但是读Windows文件较慢
-- 
+
