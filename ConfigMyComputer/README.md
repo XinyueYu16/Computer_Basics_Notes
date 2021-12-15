@@ -3,9 +3,10 @@
 - [WSL官方安装步骤](https://docs.microsoft.com/en-us/windows/wsl/install)
   - 我按照官方步骤没有不能直接wsl --install，成功的步骤如下：
     1. 检查Windows Subsystem for Linux是否为enabled，更改后重启
-    2. 在Microsoft Store下载Debian
-    3. 在Debian里输入UNIX username，新建
-    4. 回到Powershell for Administrator, 运行wsl，成功
+    2. 开启开发者模式，重启
+    3. 在Microsoft Store下载Debian
+    4. 在Debian里输入UNIX username，新建
+    5. 回到Powershell for Administrator, 运行wsl，成功
   - 安装wsl2的步骤：
     1. wsl --set-default-version 2，设置默认wsl环境（？）
     2. wsl -l -v 查看所有Distro的版本，但我在操作上一步以后，Debian依然显示为1
