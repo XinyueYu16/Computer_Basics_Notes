@@ -10,7 +10,7 @@
     1. wsl --set-default-version 2，设置默认wsl环境（？）
     2. wsl -l -v 查看所有Distro的版本，但我在操作上一步以后，Debian依然显示为1
     3. wsl --set-version Debian 2，要求启用虚拟机平台 Windows 功能并确保在 BIOS 中启用虚拟化
-    4. bcdedit /set hypervisorlaunchtype auto，重启 [参考](https://www.jianshu.com/p/12040389e0e2)
+      - bcdedit /set hypervisorlaunchtype auto，重启 [参考](https://www.jianshu.com/p/12040389e0e2), 但是没用
 
 
 - [为什么wsl2?]https://docs.microsoft.com/en-us/windows/wsl/compare-versions
