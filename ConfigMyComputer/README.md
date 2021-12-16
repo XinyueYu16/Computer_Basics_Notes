@@ -15,11 +15,12 @@
         - 进入BIOS模式，搜索virtual相关选项，Disabled -> Enabled
 - **修改Linux镜像的步骤**：[参考](https://blog.csdn.net/qq_38238114/article/details/104584376)，记得sudo
   - 修改源之前看清楚这到底是Debian还是Ubuntu的
-  - 直接改GPG Error，理论上应该如下操作，不过我缺失了 gnupg, gnupg2 and gnupg1这些包，得先装上
-  - sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net:80 --recv-keys THE_MISSING_KEY_HERE（在key之前或许需要加上0X，表示十六进制整数）
-  - apt-get update
+  - 报错 No PUBKEY的话：
+    - 直接改GPG Error，理论上应该如下操作，不过我缺失了 gnupg, gnupg2 and gnupg1这些包，得先装上
+    - sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net:80 --recv-keys THE_MISSING_KEY_HERE（在key之前或许需要加上0X，表示十六进制整数）
+    - apt-get update
 - **安装推荐包**，如vim, build-essential：[参考](https://sysin.org/blog/debian-11-install/)
-  - 目前已安装包
+  - 目前已安装包：vim, build-essential
   - 但在所有的安装之前，记得养成 apt-get update 的好习惯
 - **自绝经脉法**：出现恶心的unmet dependencies问题的时候，实在无法解决就删Debian重来吧
 
