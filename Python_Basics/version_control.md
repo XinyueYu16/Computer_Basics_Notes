@@ -80,6 +80,7 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
       - 在需要squash的行里 commit转成s
 
 11. bump2version: bump2version major|minor|patch
+    - 先squash再bump，不然会吞commit
 
 12. 上传: git push
     - 第一次push的时候需要 git push --set-upstream origin branchname
