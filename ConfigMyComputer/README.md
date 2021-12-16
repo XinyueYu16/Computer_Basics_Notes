@@ -14,7 +14,7 @@
         - ~~bcdedit /set hypervisorlaunchtype auto，重启 [参考](https://www.jianshu.com/p/12040389e0e2), 但是没用~~
         - 进入BIOS模式，搜索virtual相关选项，Disabled -> Enabled
 - **修改Linux镜像的步骤**：[参考](https://blog.csdn.net/qq_38238114/article/details/104584376)，记得sudo
-  - 修改源之前看清楚这到底是Debian还是Ubuntu的
+  - 修改源之前看清楚这到底是Debian还是Ubuntu的，如果用了Ubuntu的源的话，大概率会mess up下载的包的版本，导致unmet dependencies
   - 报错 No PUBKEY的话：
     - 直接改GPG Error，理论上应该如下操作，不过我缺失了 gnupg, gnupg2 and gnupg1这些包，得先装上
     - sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net:80 --recv-keys THE_MISSING_KEY_HERE（在key之前或许需要加上0X，表示十六进制整数）
