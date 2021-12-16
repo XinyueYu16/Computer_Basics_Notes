@@ -1,13 +1,13 @@
 # Install WSL（Debian）
 
-- [WSL官方安装步骤](https://docs.microsoft.com/en-us/windows/wsl/install)
+- **[WSL官方安装步骤]**(https://docs.microsoft.com/en-us/windows/wsl/install)
   - 我按照官方步骤没有不能直接wsl --install，成功的步骤如下：
     1. 检查Windows Subsystem for Linux是否为enabled，更改后重启
     2. 开启开发者模式，重启
     3. 在Microsoft Store下载Debian
     4. 在Debian里输入UNIX username，新建
     5. 回到Powershell for Administrator, 运行wsl，成功
-  - 安装wsl2的步骤：
+  - **安装wsl2的步骤**：
     1. wsl --set-default-version 2，设置默认wsl环境（？）
     2. wsl -l -v 查看所有Distro的版本，但我在操作上一步以后，Debian依然显示为1
     3. wsl --set-version Debian 2，要求启用虚拟机平台 Windows 功能并确保在 BIOS 中启用虚拟化
@@ -18,10 +18,10 @@
     - 直接改GPG Error，理论上应该如下操作，不过我缺失了 gnupg, gnupg2 and gnupg1这些包，得先装上
     - sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net:80 --recv-keys THE_MISSING_KEY_HERE（在key之前或许需要加上0X，表示十六进制整数）
     - apt-get update
-  - 安装推荐包，如vim, build-essential：[参考](https://sysin.org/blog/debian-11-install/)
+  - **安装推荐包**，如vim, build-essential：[参考](https://sysin.org/blog/debian-11-install/)
     - 目前已安装包
     - 但在所有的安装之前，记得养成 apt-get update 的好习惯
-  - 出现恶心的unmet dependencies问题的时候，实在无法解决就删Debian重来吧
+  - **自绝经脉法**：出现恶心的unmet dependencies问题的时候，实在无法解决就删Debian重来吧
 
 
 ## 延伸阅读
