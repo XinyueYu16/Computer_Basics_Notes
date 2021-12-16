@@ -15,10 +15,8 @@
         - 进入BIOS模式，搜索virtual相关选项，Disabled -> Enabled
   - **修改Linux镜像的步骤**：[参考](https://blog.csdn.net/qq_39263240/article/details/79342582)，记得sudo
     - 直接改GPG Error，理论上应该如下操作，不过我缺失了 gnupg, gnupg2 and gnupg1这些包，得先装上
-    
-      apt-key adv --recv-keys --keyserver keyserver.ubuntu.com XXXXXX
-    
-      apt-get update
+    - apt-key adv --recv-keys --keyserver keyserver.ubuntu.com XXXXXX
+    - apt-get update
   - 安装推荐包，如build-essential：[参考](https://sysin.org/blog/debian-11-install/)
 
 
