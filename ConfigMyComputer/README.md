@@ -18,6 +18,7 @@
       apt-key adv --recv-keys --keyserver keyserver.ubuntu.com XXXXXX
     
       apt-get update
+  - 安装推荐包，如build-essential：[参考](https://sysin.org/blog/debian-11-install/)
 
 
 
