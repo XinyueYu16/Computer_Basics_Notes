@@ -22,7 +22,7 @@
 
 
 ## 延伸阅读
-- [为什么wsl2?]https://docs.microsoft.com/en-us/windows/wsl/compare-versions
+- [为什么wsl2?](https://docs.microsoft.com/en-us/windows/wsl/compare-versions)
   - wsl1：假Linux内核，文件都存在windows上，如果符合这种文件存储习惯，wsl1更快
   - wsl2：真Linux内核，可跑Docker，但是读Windows文件较慢
 - vim关键快捷键：
