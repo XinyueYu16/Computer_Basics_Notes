@@ -1,6 +1,6 @@
 # Install WSL（Debian）
 
-- **[WSL官方安装步骤]**(https://docs.microsoft.com/en-us/windows/wsl/install)
+- **[WSL官方安装步骤](https://docs.microsoft.com/en-us/windows/wsl/install)**
   - 我按照官方步骤没有不能直接wsl --install，成功的步骤如下：
     1. 检查Windows Subsystem for Linux是否为enabled，更改后重启
     2. 开启开发者模式，重启
