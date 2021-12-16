@@ -54,9 +54,9 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
 5. 暂存内容：[git stash](https://www.cnblogs.com/tocy/p/git-stash-reference.html)
 
     - 当你在当前分支的内容没有commit（不想让过多未完成commit污染log）没法checkout其他分支
-    - git squash list: 查看所有被暂存的名称
-    - git squash pop: 从list中去除最新暂存的一个，并且释放到当前空间
-    - git squash apply: 根据指定名字释放到当前空间，默认第一个，不从list中删除
+    - git stash list: 查看所有被暂存的名称
+    - git stash pop: 从list中去除最新暂存的一个，并且释放到当前空间
+    - git stash apply: 根据指定名字释放到当前空间，默认第一个，不从list中删除
     - git stash drop stash@{0}: 删除指定的stash，但是注意每删除一次序号都会变……如果想要从上往下删，不停git stash drop stash@{0}就可以
     - git stash 会在远程仓库被共享吗?
 
