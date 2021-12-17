@@ -71,7 +71,8 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
     - 当checkout到未被命名的分支以后，处于分离状态，detached HEAD
 
 9. 强制回到状态：git reset --hard \[6位数\]
-    - 确保回到你想要修改的分支上，再做这个操作
+    - 确保回到你想要修改的分支上，再做这个操作，该操作生效后所有修改都不会保留
+    - git reset --soft main 可以使log回到指定分支/状态，且该状态后的所有操作都会变绿（待commit状态）
 
 10. 多commit合并: git squash
     - git rebase -i HEAD~3 
