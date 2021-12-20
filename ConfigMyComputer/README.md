@@ -15,10 +15,13 @@
         - 进入BIOS模式，搜索virtual相关选项，Disabled -> Enabled
   - **查看wsl系统文件夹**： 在Debian里输入 explorer exe.
 - **修改Linux镜像的步骤**：[参考](https://blog.csdn.net/qq_38238114/article/details/104584376)，记得sudo
-  - 修改源之前看清楚这到底是Debian还是Ubuntu的，如果用了Ubuntu的源的话，大概率会mess up下载的包的版本，导致unmet dependencies
-  - 报错 No PUBKEY的话：
-    - 直接改GPG Error，理论上应该如下操作，不过我缺失了 gnupg, gnupg2 and gnupg1这些包，得先装上
-    - sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net:80 --recv-keys THE_MISSING_KEY_HERE（在key之前或许需要加上0X，表示十六进制整数）
+  - **使用Debian源**：修改源之前看清楚这到底是Debian还是Ubuntu的，如果用了Ubuntu的源的话，大概率会mess up下载的包的版本，导致unmet dependencies
+  - **使用http源**：Debian未自动支持HTTPS源，如果使用，先sudo apt install apt-transport-https ca-certificates
+  - **报错 No PUBKEY的话**：
+<!--     - 直接改GPG Error，理论上应该如下操作，不过我缺失了 gnupg, gnupg2 and gnupg1这些包，得先装上 -->
+    - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 648ACFD622F3D138
+      - 在key之前或许需要加上0X，表示十六进制整数
+      - apt-get install dirmngr
     - apt-get update
 - **安装推荐包**，如vim, build-essential：[参考](https://sysin.org/blog/debian-11-install/#17-%E5%AE%89%E8%A3%85%E5%BF%85%E5%A4%87%E5%B7%A5%E5%85%B7)
   - 目前已安装包：vim, build-essential
@@ -44,4 +47,11 @@
 2. 安装相关remote development相关extension
 3. sudo apt-get update: 更新Debian
 4. sudo apt-get install wget ca-certificates: 安装wget以从web server下载数据；安装ca-certificatestes通过SSL相关验证
-5. 
+
+# Install Python
+- [教程](https://linuxize.com/post/how-to-install-python-3-8-on-debian-10/)
+
+# Install Git
+
+
+
