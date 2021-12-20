@@ -48,13 +48,15 @@
 3. sudo apt-get update: 更新Debian
 4. sudo apt-get install wget ca-certificates: 安装wget以从web server下载数据；安装ca-certificatestes通过SSL相关验证
 
+# Install Git
+- sudo apt-get install git-all --[Git官网](https://github.com/git-guides/install-git)
+
+
 # Install Python
 - [教程](https://linuxize.com/post/how-to-install-python-3-8-on-debian-10/)
   - 在安装前注意检查linux当前所在位置，建议直接通过网页下载Python tar.gz，然后在linux中进行解压
-- 配置Pyenv:
-- 配置pyenv+virtualenv:
+- 配置pyenv+virtualenv: https://github.com/XinyueYu16/Computer_Basics_Notes/issues/4
 
-# Install Git
-- sudo apt-get install git-all --[Git官网](https://github.com/git-guides/install-git)
+# Install Jupyter + Config Kernal
 
 
