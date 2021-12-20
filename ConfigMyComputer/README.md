@@ -18,7 +18,7 @@
   - **使用Debian源**：修改源之前看清楚这到底是Debian还是Ubuntu的，如果用了Ubuntu的源的话，大概率会mess up下载的包的版本，导致unmet dependencies
   - **使用http源**：Debian未自动支持HTTPS源，如果使用，先sudo apt install apt-transport-https ca-certificates
   - **报错 No PUBKEY的话**：
-<!--     - 直接改GPG Error，理论上应该如下操作，不过我缺失了 gnupg, gnupg2 and gnupg1这些包，得先装上 -->
+<!--     直接改GPG Error，理论上应该如下操作，不过我缺失了 gnupg, gnupg2 and gnupg1这些包，得先装上 -->
     - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 648ACFD622F3D138
       - 在key之前或许需要加上0X，表示十六进制整数
       - apt-get install dirmngr
