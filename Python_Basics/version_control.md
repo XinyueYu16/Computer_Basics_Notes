@@ -93,6 +93,7 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
 12. 上传: git push
     - 第一次push的时候需要 git push --set-upstream origin branchname
     - 当远程的内容与本地内容不一致，且本地内容不是基于远程内容枝上分叉出来的时候，如果想采取本地更改，git push -f (不要试图 -f master或main)
+    - git push --tags 会把本地所有tags都推到远程，不额外设置的话，会直接显示在项目里（只推tag不推内容
 
 ### 其他git知识
 - .gitkeep：
