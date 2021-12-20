@@ -13,7 +13,7 @@
     3. wsl --set-version Debian 2，要求启用虚拟机平台 Windows 功能并确保在 BIOS 中启用虚拟化
         - ~~bcdedit /set hypervisorlaunchtype auto，重启 [参考](https://www.jianshu.com/p/12040389e0e2), 但是没用~~
         - 进入BIOS模式，搜索virtual相关选项，Disabled -> Enabled
-  - **查看wsl系统文件夹**： 在Debian里输入 explorer exe.
+  - **查看wsl系统文件夹**： 在Debian里输入 explorer.exe .
 - **修改Linux镜像的步骤**：[参考](https://blog.csdn.net/qq_38238114/article/details/104584376)，记得sudo
   - **使用Debian源**：修改源之前看清楚这到底是Debian还是Ubuntu的，如果用了Ubuntu的源的话，大概率会mess up下载的包的版本，导致unmet dependencies
   - **使用http源**：Debian未自动支持HTTPS源，如果使用，先sudo apt install apt-transport-https ca-certificates
@@ -51,8 +51,10 @@
 # Install Python
 - [教程](https://linuxize.com/post/how-to-install-python-3-8-on-debian-10/)
   - 在安装前注意检查linux当前所在位置，建议直接通过网页下载Python tar.gz，然后在linux中进行解压
+- 配置Pyenv:
+- 配置pyenv+virtualenv:
 
 # Install Git
-
+- sudo apt-get install git-all --[Git官网](https://github.com/git-guides/install-git)
 
 
