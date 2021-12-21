@@ -51,6 +51,7 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
     - 只是记录需要被track，当他们发生改变的时候git status会提醒，但是不会保存快照；
     - 每一次文件被修改后都要add；
     - 不希望被track的文件可以放入.gitignore
+    
 5. 暂存内容：[git stash](https://www.cnblogs.com/tocy/p/git-stash-reference.html)
 
     - 当你在当前分支的内容没有commit（不想让过多未完成commit污染log）没法checkout其他分支
@@ -75,7 +76,7 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
       - 确保回到你想要修改的分支上，再做这个操作，该操作生效后所有修改都不会保留
     - git reset --soft main
       - 可以使log回到指定分支/状态，且该状态后的所有操作都会变红（待add状态）
-    - 可以使用git reflog查看本地仓库所有的操作，方便回滚
+    - 可以使用**git reflog**查看本地仓库所有的操作，方便回滚
     - [git reset和git checkout 经常被视为本地branch 的undo](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
       - git reset 常用于回到commit状态
       - git checkout 常用于撤回文件状态
@@ -86,6 +87,7 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
       - Linux里面莫名奇妙地不能这么做，但是Terminal/wsl可以
       - HEAD后面的~数量尽量要比需要squash的大，然后就可以看到尽可能多的commit
       - 在需要squash的行里 commit转成s
+    - git rebase -i origin/master (聪明的做法是这样，直接在origin/master上interactive rebase，使commit看起来clean&clear)
 
 11. bump2version: bump2version major|minor|patch
     - 先squash再bump，不然会吞commit
