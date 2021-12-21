@@ -50,6 +50,11 @@
 
 # Install Git
 - sudo apt-get install git-all --[Git官网](https://github.com/git-guides/install-git)
+- 配置email与username:
+  - git config --global user.email "xxx@xx.com"
+  - git config --global user.name "xxx"
+- 替换远程HTTPS源: 
+  - git remote set-url origin https://github.com/XinyueYu16/Computer_Basics_Notes.git
 
 # Install Python
 - [教程](https://linuxize.com/post/how-to-install-python-3-8-on-debian-10/)
