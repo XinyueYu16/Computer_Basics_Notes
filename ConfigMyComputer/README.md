@@ -51,12 +51,15 @@
 # Install Git
 - sudo apt-get install git-all --[Git官网](https://github.com/git-guides/install-git)
 
-
 # Install Python
 - [教程](https://linuxize.com/post/how-to-install-python-3-8-on-debian-10/)
   - 在安装前注意检查linux当前所在位置，建议直接通过网页下载Python tar.gz，然后在linux中进行解压
 - 配置pyenv+virtualenv: https://github.com/XinyueYu16/Computer_Basics_Notes/issues/4
 
 # Install Jupyter + Config Kernal
+- Jupyter 使用 pip install jupyter 下载，顺便下载ipykernel, ipython 
+- Jupyter 必备 nbextension
+- config Kernel: https://albertauyeung.github.io/2020/08/17/pyenv-jupyter.html/#adding-kernels-to-jupyter
+
 
 
