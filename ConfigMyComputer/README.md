@@ -55,6 +55,11 @@
   - git config --global user.name "xxx"
 - 替换远程HTTPS源: 
   - git remote set-url origin https://github.com/username/repo.git
+- 设置Github proxy:
+  - git config --global https.https://github.com.proxy https://127.0.0.1:7890
+- 使用Token:
+  - git clone https://<tokenhere>@github.com/<user>/<repo>.git
+  - git remote set-url origin https://<githubtoken>@github.com/<username>/<repositoryname>.git
 
 # Install Python
 - [教程](https://linuxize.com/post/how-to-install-python-3-8-on-debian-10/)
