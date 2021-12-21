@@ -56,7 +56,8 @@
   - 在安装前注意检查linux当前所在位置，建议直接通过网页下载Python tar.gz，然后在linux中进行解压
 - 配置pyenv+virtualenv: https://github.com/XinyueYu16/Computer_Basics_Notes/issues/4
 
-# Install Jupyter + Config Kernal【或许我应该尝试抛弃jupyter notebook,转投VSCode Jupyter?】
+# Install Jupyter + Config Kernal
+【或许我应该尝试抛弃jupyter notebook,转投VSCode Jupyter?】
 - Jupyter 使用 pip install jupyter 下载，顺便下载ipykernel, ipython 
 - Jupyter 必备 nbextension: jupyter contrib nbextension install --user
 - config Kernel: https://albertauyeung.github.io/2020/08/17/pyenv-jupyter.html/#adding-kernels-to-jupyter
