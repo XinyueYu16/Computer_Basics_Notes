@@ -54,7 +54,7 @@
   - git config --global user.email "xxx@xx.com"
   - git config --global user.name "xxx"
 - 替换远程HTTPS源: 
-  - git remote set-url origin https://github.com/XinyueYu16/Computer_Basics_Notes.git
+  - git remote set-url origin https://github.com/username/repo.git
 
 # Install Python
 - [教程](https://linuxize.com/post/how-to-install-python-3-8-on-debian-10/)
