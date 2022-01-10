@@ -7,6 +7,8 @@
 本地裸跑 —— 相信运气
 
 pyenv+virtualencv跑 —— 改变python及包环境，相信软件依赖(pyenv修改python环境，virtualenv控制项目包环境)
+- pip freeze (生成requirements.txt，所有装上的包)
+- pigar . (生成requirements.txt，只能检索所有代码里使用到的包)
 
 docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有linux内核但是当文件都在windows上的时候存取会变慢……所以除了使用docker时，我都是用wsl
 
