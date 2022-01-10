@@ -65,6 +65,7 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
 
 6. 保存文件快照：git commit -m
     - 当前快照被保存至本地仓库
+    - **git commit --amend --no-edit**，避免rebase，快速修改之前的最后一次commit
 
 7. 查看历史版本：git log --pretty=oneline 
     - 可以取前6位数进行checkout
