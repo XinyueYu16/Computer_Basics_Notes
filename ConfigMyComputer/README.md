@@ -64,7 +64,7 @@
 # Install Python
 - [教程](https://linuxize.com/post/how-to-install-python-3-8-on-debian-10/)
   - 在安装前注意检查linux当前所在位置，建议直接通过网页下载Python tar.gz，然后在linux中进行解压
-  - 一些必备包：python3-dev, libssl-dev等 [](https://linuxtect.com/the-error-command-gcc-failed-with-exit-status-1-error-and-solution/#:~:text=Install%20Python%20Development%20Packages,in%20most%20of%20the%20distributions.)
+  - 一些必备包：python3-dev, libssl-dev等 [详情](https://linuxtect.com/the-error-command-gcc-failed-with-exit-status-1-error-and-solution/#:~:text=Install%20Python%20Development%20Packages,in%20most%20of%20the%20distributions.)
 - 配置pyenv+virtualenv: https://github.com/XinyueYu16/Computer_Basics_Notes/issues/4
 
 # Install Jupyter + Config Kernal
