@@ -91,6 +91,7 @@ docker —— 相信科学（但是windows的docker需要wsl2，而wsl2虽然有
       - HEAD后面的~数量尽量要比需要squash的大，然后就可以看到尽可能多的commit
       - 在需要squash的行里 commit转成s
     - git rebase -i origin/master (聪明的做法是这样，直接在origin/master上interactive rebase，使commit看起来clean&clear)
+    - git cherry-pick: 可以从隔壁分支单独摘取想要的commit，如果 -n 则不直接commit到当前分支，只是改变工作区 [参考]https://zhuanlan.zhihu.com/p/355413226
 
 11. bump2version: bump2version major|minor|patch
     - 先squash再bump，不然会吞commit
